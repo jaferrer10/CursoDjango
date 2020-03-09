@@ -18,7 +18,9 @@
 	        <div class="col-lg-7 col-md-8">
 	      		<h2 class="section-heading title">{{project.title}}</h2>   
 	          <p>{{project.description}}</p>
-	          <!-- <p><a href="http://google.com">Más información</a></p> -->
+			{% if project.link %} <!-- Aqui pregunta si existe el link, que no venga vacio -->
+	          	<a href={{projet.link}}>Más información</a></p> -->
+			{% endif %}
 	      	</div>
 	{% endfor %}
 {% endblock %}
